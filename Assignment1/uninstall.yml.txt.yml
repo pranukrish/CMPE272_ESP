@@ -1,0 +1,12 @@
+--- 
+- hosts: ansible_client
+  remote_user: vishnuvryeruva
+  gather_facts: true
+  become: true
+  tasks:
+    - name: "1. Uninstall HTTPD/Apache"
+      tags: uninstall_apache2
+      apt:
+        name: apache2
+        autoremove: yes
+        state: absent
