@@ -1,6 +1,6 @@
 --- 
 - hosts: ansible_client
-  remote_user: vishnuvryeruva
+  remote_user: pranumk22
   gather_facts: true
   become: true
   tasks:
